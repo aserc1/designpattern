@@ -8,5 +8,7 @@ public class DuckTest {
 		Duck mallard = new MallarDuck();
 		mallard.performQuack();
 		mallard.performFly();
+		mallard.setFlyBehavior(new FlyNoWay());
+		mallard.performFly();
 	}
 }
